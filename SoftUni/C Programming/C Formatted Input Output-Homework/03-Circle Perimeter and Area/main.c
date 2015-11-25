@@ -14,7 +14,7 @@ int main()
 
     printf("Enter radius: ");
 
-    if ((scanf("%f", &radius) == 1.0))
+    if ((scanf("%f", &radius) == 1))
     {
         circleCalculate(radius);
     }

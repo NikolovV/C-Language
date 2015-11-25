@@ -32,7 +32,7 @@ void checkInput(int *A, int *B)
 
 void devideByFive(int A, int B)
 {
-    unsigned int i, remainder, p = 0, isMoreNum = 0;
+    unsigned int i, remainder, p = 0;
 
     for (i = A; i <= B; i++)
     {
@@ -40,7 +40,7 @@ void devideByFive(int A, int B)
         {
             printf("%u", i);
             ++p;
-            if (i < B)
+            if (i <= B - 5)
             {
                 printf(", ");
             }
