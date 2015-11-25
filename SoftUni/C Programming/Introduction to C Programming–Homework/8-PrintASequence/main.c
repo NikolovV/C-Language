@@ -17,7 +17,12 @@ int main(int argc, char** argv)
         {
             printf("-");
         }
-        printf("%d,", number);
+        printf("%d", number);
+        if (i < MEMBER - 1)
+        {
+            printf(", ");
+        }
+
     }
 
     return (EXIT_SUCCESS);
