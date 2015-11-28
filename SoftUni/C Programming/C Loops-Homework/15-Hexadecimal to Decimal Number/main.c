@@ -14,8 +14,7 @@ int removeNewLine(char *);
 long long hexToDecimal(char *);
 
 int main()
-{
-    
+{    
     char hexadecimal[BUFER];
     int lineLenght;
     long long decimal;
@@ -23,7 +22,6 @@ int main()
     printf("Enter hexadecimal integer number: ");
     fgets(hexadecimal, BUFER, stdin);
     lineLenght = removeNewLine(hexadecimal);
-
     
     decimal = hexToDecimal(hexadecimal);
 

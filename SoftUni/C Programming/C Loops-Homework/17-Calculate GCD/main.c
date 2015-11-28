@@ -11,7 +11,6 @@ int gcd_algorithm(int, int);
 
 int main()
 {
-
     int a, b, gcd;
 
     printf("Enter two numbers:");
@@ -41,18 +40,13 @@ void checkIntInput(int *x, int *y)
 }
 
 int gcd_algorithm(int x, int y)
-
 {
-
     if (y == 0)
     {
-
         return x;
-
     }
     else if (x >= y && y > 0)
     {
-
         return gcd_algorithm(y, (x % y));
     }
 }
