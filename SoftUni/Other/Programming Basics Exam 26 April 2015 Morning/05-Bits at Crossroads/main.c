@@ -9,7 +9,7 @@
 void set_bit(uint32_t *number, int position, int bit_value);
 bool nth_position(uint32_t num, int position);
 void begin_game(uint32_t size);
-void fil_from_top_left(uint32_t arr[], int ROW, int COL, int size, int *counter);
+void fill_from_top_left(uint32_t arr[], int ROW, int COL, int size, int *counter);
 void fill_from_top_right(uint32_t arr[], int ROW, int COL, int size, int *counter);
 size_t remove_new_line(char *str);
 void print_array(uint32_t str[], size_t size);
@@ -43,7 +43,7 @@ void begin_game(uint32_t size)
 
         set_bit(&digits[currentRow], currentCol, 1);
 
-        fil_from_top_left(digits, currentRow, currentCol, size, &crossroadsCount);
+        fill_from_top_left(digits, currentRow, currentCol, size, &crossroadsCount);
         fill_from_top_right(digits, currentRow, currentCol, size, &crossroadsCount);
 
         crossroadsCount++;
@@ -76,7 +76,7 @@ void print_array(uint32_t str[], size_t size)
     }
 }
 
-void fil_from_top_left(uint32_t arr[], int ROW, int COL, int size, int *counter)
+void fill_from_top_left(uint32_t arr[], int ROW, int COL, int size, int *counter)
 {
     int startRow, startCol = COL + ROW;
 
