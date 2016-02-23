@@ -1,0 +1,9 @@
+Package: largest-prime
+Version: 0.1
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 15
+Maintainer: mail@to.com
+Description: Find largest prime number for a period of time.

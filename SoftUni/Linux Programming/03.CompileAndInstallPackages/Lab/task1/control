@@ -1,0 +1,9 @@
+Package: calculate-figure
+Version: 0.1
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 1024
+Maintainer: mail@to.com
+Description: Calculates perimeter and surface of given equilateral figure by given side and number of angles
